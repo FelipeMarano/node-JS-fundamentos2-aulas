@@ -6,7 +6,7 @@ const lista = [alunos, medias]; // para juntar os dois arryas
 function exibeNomeNota (aluno) {
     if  (lista[0].includes(aluno)) { // para achar se tem algum aluno
         const indice = lista[0].indexOf(aluno) // indexOf = retorna o índice 
-        const mediaAluno = lista[1][indice];
+        const mediaAluno = medias[1][indice];
         console.log(`${aluno} tem a média ${mediaAluno}`);
         } else {
         console.log('Estudante não existe na lista');
